@@ -8,5 +8,6 @@ The code is mostly based of:
 - Lack Of Comments
 - Tab Hell
 - 1 Letter Long Variables That Are Going To Be A Hell To Change Into Something Diferent
+
 And much more! At the time that im writing this, the code barely has 100 lines, so you can imagine what it looks like when its done. If for some stupid reason you want to download this disaster, i will be making updates with as much frequency as i feel like, and well, its python, as long as you have python on your machine, and as long as you can read this with it, you likely can run it.
 If you want to roast me, or politely dox me, feel free to do so at my Twitter @malditotanuki.
