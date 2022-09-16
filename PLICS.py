@@ -9,12 +9,12 @@ s = 0
 ver = "Version B.0.1"
 polygon = ["triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"]
 commands = ["help", "newPol", "exit", "newRePol"]
-print("Hey there! This is the Polygon Information Calculation System (PICS)!")
+print("Hey there! This is the Polygon Information Calculation System (PLICS)!")
 print(ver)
 print("Comands: help, newPol, exit, newRePol... ")
 
 while broken == False :
-    print("Hey! this is PICS!")
+    print("Hey! this is PLICS!")
     com = str(input("> "))
     print(com)
     if(com == "help"):
@@ -100,7 +100,7 @@ while broken == False :
             else:
                 print("huh")
     elif(com == "exit"):
-        print("thanks for using PICS!")
+        print("thanks for using PLICS!")
         broken = True
     else:
         print("Uknown command! try again!")
