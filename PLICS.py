@@ -1,18 +1,31 @@
+import os
+file_path = os.path.realpath(__file__)
+script_dir = os.path.abspath( os.path.dirname( __file__ ) )
 broken = False
 helpbroken = False
 newrepolbroken = False
+newrepol = "newRePol is the command that allows you to calculate the properties of any given regular poligons, and thus is the most important command in the entire program! just follow the give instructions!"
 n = 0
 d = 0
 e = 0
 i = 0
 s = 0
-ver = "Version B.0.1"
+les = 0
+ver = "Version PLICSv0.0.0-Alpha2.0.3"
+log = ["realease ver, nothing to see.","Ver PLICSv0.0.0-alpha2: Added notes, credits and readme commands, fixed minor problems with the newRePol command, added descriptions to the help command.", "Ver PLICSv0.0.0-Alpha2.0.3: FINALLY added the GNU General Public License, commands to display it as well as its warranty, and a better way to display the readme. There is still a lot to do, the main commands is still with lots of errors and the help command is still far from complete."]
 polygon = ["triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"]
-commands = ["help", "newPol", "exit", "newRePol"]
+commands = ["help", "newPol", "exit", "newRePol", "notes", "credits", "readme", "license", "warranty"]
+for lis in range(0,40):
+    print("")
 print("Hey there! This is the Polygon Information Calculation System (PLICS)!")
 print(ver)
-print("Comands: help, newPol, exit, newRePol... ")
-
+print("    PLICS  Copyright (C) 2022 ThaNook")
+print("    This program comes with ABSOLUTELY NO WARRANTY; for details type 'warranty'.")
+print("    This is free software, and you are welcome to redistribute it")
+print("    under certain conditions; for more information,")
+print("    read the license provided with this code, by using the 'license' command")
+print("    or reading the 'License_gpl-3.0.txt' file in the same folder as this script.")
+print("  Comands: help, notes, exit, newRePol, readme... ")
 while broken == False :
     print("Hey! this is PLICS!")
     com = str(input("> "))
@@ -23,13 +36,47 @@ while broken == False :
             com = input("[help]> ")
             if(com == "help"):
                 print("you really dont know what the help command does?")
+            elif(com == "notes"):
+                print("shows update notes for this update and all previous. I will be posting it somewhere else too at somepoint")
+            elif(com == "credits"):
+                print("prints everyone that has worked on this stupid little project with me!")
+            elif(com == "newRePol"):
+                print(newrepol)
+            elif(com == newrepol):
+                print("you copypasted the entire thing why")
+            elif(com == "readme"):
+                print("why dont you run the command and read it?")
+            elif(com == "newPol"):
+                print("the comand that is not done yet!")
             elif(com == "quit"):
                 helpbroken = True
             elif(com == "ls"):
                 print("All commands avalable:")
                 print(commands)
             else:
-                print("what?")        
+                print("what?")  
+    elif(com == "notes"):
+        print("These are the notes for the updates so far:") 
+        for les in range(0,len(log)):
+            print(log[les])
+            print("")
+        else:
+            les=0
+    elif(com == "readme"):
+        print(" ")
+        with open(script_dir +"/texts/readmedaddy") as README:
+            print(README.read())
+    elif(com == "warranty"):
+        print(" ")
+        with open(script_dir +"/texts/warranty.txt") as WARRANTY:
+            print(" ")
+            print(WARRANTY.read())
+    elif(com == "credits"):
+        print("me (tanuki, @malditotanuki on twitter), the user nikhilkumarsingh on github for the TextFormatter script. ")
+    elif(com == "license"):
+        print(" ")
+        with open(script_dir + "/texts/License_gpl-3.0.txt") as GPL:
+            print(GPL.read())
     elif(com == "newRePol"):
         while newrepolbroken == False:
             print("What do you know about the regular poligon?")
@@ -99,6 +146,9 @@ while broken == False :
                 print(" ")            
             else:
                 print("huh")
+        else:
+            print(" ")
+            newrepolbroken = False
     elif(com == "exit"):
         print("thanks for using PLICS!")
         broken = True
