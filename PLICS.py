@@ -11,8 +11,8 @@ e = 0
 i = 0
 s = 0
 les = 0
-ver = "Version PLICSv0.0.0-Alpha2.0.3"
-log = ["realease ver, nothing to see.","Ver PLICSv0.0.0-alpha2: Added notes, credits and readme commands, fixed minor problems with the newRePol command, added descriptions to the help command.", "Ver PLICSv0.0.0-Alpha2.0.3: FINALLY added the GNU General Public License, commands to display it as well as its warranty, and a better way to display the readme. There is still a lot to do, the main commands is still with lots of errors and the help command is still far from complete."]
+ver = "Version PLICSv0.0.0-Alpha2.0.3-1"
+log = ["realease ver, nothing to see.","Ver PLICSv0.0.0-alpha2: Added notes, credits and readme commands, fixed minor problems with the newRePol command, added descriptions to the help command.", "Ver PLICSv0.0.0-Alpha2.0.3: FINALLY added the GNU General Public License, commands to display it as well as its warranty, and a better way to display the readme. There is still a lot to do, the main commands is still with lots of errors and the help command is still far from complete.", "Ver PLICSv0.0.0-Alpha2.0.3-1: I FORGOT TO ADD THE LICENSE TO THE RIGHT FOLDER BRUH"]
 polygon = ["triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"]
 commands = ["help", "newPol", "exit", "newRePol", "notes", "credits", "readme", "license", "warranty"]
 for lis in range(0,40):
