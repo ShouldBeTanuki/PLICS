@@ -1,0 +1,25 @@
+Known bugs/problems/missing features list for v0-Alpha2.0.3-1:
+Overall:
+	Lack of comments
+	Bad use of variables
+	Bad variable names
+	Really bad variable names
+	Incrdibly bad variable names
+	Overall inefficient choices
+	God have mercy
+newRePol:
+	The 's' function is unusable
+	The program does not like the number 7 for some reason
+	Most of the 'e' function does not work
+	The 'd' function is incorrectly labled as the total count of diagonals; is the count of triangles that make up the polygon
+	Only has polygon names up to 10
+License:
+	licensing is incomplete
+TextFormatter.py:
+	didnt even start
+Help:
+	lots of missing commands
+	poor descriptions
+	a literal if-else chain
+	breaks its own loop after quiting
+
